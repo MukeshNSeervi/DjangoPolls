@@ -1,9 +1,12 @@
 from django.db import models
 from django.utils import timezone
 import datetime
+# Models are used to create an Database and Following Class Names as their Table names!! @^_^@
 # Create your models here.
 class Question(models.Model):
-
+    """
+        This will create an DB table named Question with the following variables as attribute
+    """
     question_text = models.CharField(max_length=200)
     pud_date = models.DateTimeField('Date published')
     def __str__(self):
